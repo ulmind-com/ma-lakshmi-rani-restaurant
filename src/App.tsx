@@ -8,7 +8,7 @@ import { ThemeProvider } from "next-themes";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 
-// ✅ Snowfall import
+// Snowfall import
 import Snowfall from "react-snowfall";
 
 const queryClient = new QueryClient();
@@ -29,7 +29,7 @@ const App = () => (
             top: 0,
             left: 0,
             pointerEvents: "none",
-            zIndex: 500, // under any floating widgets
+            zIndex: 500, 
           }}
           color="#ffffff"
           snowflakeCount={80}
@@ -42,7 +42,6 @@ const App = () => (
         <BrowserRouter basename="/">
           <Routes>
             <Route path="/" element={<Index />} />
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
