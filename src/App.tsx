@@ -8,7 +8,7 @@ import { ThemeProvider } from "next-themes";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 
-// ✅ Snowfall import
+//  Snowfall import
 import Snowfall from "react-snowfall";
 
 const queryClient = new QueryClient();
